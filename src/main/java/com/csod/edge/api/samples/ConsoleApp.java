@@ -10,18 +10,17 @@ public class ConsoleApp {
 	private static final String API_BASE_ADDRESS = "http://DOMAIN.csod.com:81";
 
 	private static final String CLIENT_ID = "";
-	
+
 	private static final String CLIENT_SECRET = "";
-	
+
 	private static final String API_PATH = "/services/api/x/users/v1/employees";
-	
+
 	private static EdgeApiClient client;
 
 	public static void main(String[] args) throws Exception {
 		init();
-		System.out.println("Edge Employee API sample");		
+		System.out.println("Edge Employee API sample");
 		executeService();
-		
 	}
 
 	private static void init() throws MalformedURLException {
@@ -40,8 +39,4 @@ public class ConsoleApp {
 			System.out.println(String.format("Response length is %s. Response : %s", stringContent.length(), stringContent));
 		}
 	}
-
-	
-
-	
 }
